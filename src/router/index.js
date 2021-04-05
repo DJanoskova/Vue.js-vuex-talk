@@ -1,14 +1,26 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+
+import Posts from '../views/Posts'
+import CreatePost from '../views/CreatePost'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'posts',
+    component: Posts
+  },
+  {
+    path: '/create',
+    name: 'create',
+    component: CreatePost
+  },
+  {
+    path: '/edit/:id',
+    name: 'edit',
+    component: CreatePost
   }
 ]
 

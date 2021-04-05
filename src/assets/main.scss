@@ -1,0 +1,66 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, "sans-serif";
+  font-size: 1.6rem;
+  color: #73818d;
+
+  a {
+    color: #4dd5a5;
+    transition: 0.2s;
+
+    &:hover {
+      color: #36a88d;
+    }
+  }
+}
+
+#app {
+  max-width: 60rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+#nav {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0 -1rem 4rem -1rem;
+
+  a {
+    padding: 1rem;
+  }
+}
+
+.post {
+  &-container {
+    padding: 1rem 2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+
+    h3 {
+      text-transform: capitalize;
+      color: #424d58;
+    }
+  }
+
+  &-body {
+    white-space: pre-line;
+  }
+
+  &-actions {
+    margin-top: 1rem;
+  }
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #d0d0d0 solid;
+  font-family: Arial, Helvetica, "sans-serif";
+}
