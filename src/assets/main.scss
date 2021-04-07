@@ -8,13 +8,34 @@ body {
   font-size: 1.6rem;
   color: #73818d;
 
+  --primary: #4dd5a5;
+  --primary2: #36a88d;
+
   a {
-    color: #4dd5a5;
+    color: var(--primary);
     transition: 0.2s;
+    text-decoration: underline;
+    cursor: pointer;
 
     &:hover {
-      color: #36a88d;
+      color: var(--primary2);
     }
+  }
+}
+
+button {
+  background: var(--primary);
+  transition: 0.2s;
+  border: none;
+  color: #ffffff;
+  border-radius: 1rem;
+  padding: 0.7rem 1.4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--primary2);
   }
 }
 

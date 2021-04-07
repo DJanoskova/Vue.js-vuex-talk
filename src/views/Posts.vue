@@ -11,7 +11,7 @@ import Post from '../components/Post'
 
 export default {
   mounted() {
-    this.POSTS_FETCH()
+    if (!this.posts.length) this.POSTS_FETCH()
   },
   methods: {
     ...mapActions([
